@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, Database, Users, Search, CheckCircle2 } from "lucide-react";
+import { Shield, Speaker, Database, Users, Search, CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -23,6 +23,11 @@ const features = [
     icon: Search,
     title: "Future Expansion",
     description: "Planning to provide critical election information, candidate profiles, and detailed voting procedures."
+  },
+  {
+    icon: Speaker,
+    title: "Advocacy for Data Standards",
+    description: "Working with federal, state and local governments to adopt data standards to improve access to data at all levels of government."
   }
 ];
 
