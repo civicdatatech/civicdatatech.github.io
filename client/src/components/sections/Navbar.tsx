@@ -1,3 +1,4 @@
+//// filepath: /Users/virginiadooley/Documents/civicdataproject/client/src/components/sections/Navbar.tsx
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,16 +8,16 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const BASE_PATH = "/civicdatatech";
-
   useEffect(() => {
     let timeout: ReturnType<typeof setTimeout> | null = null;
+
     const handleScroll = () => {
       if (timeout) clearTimeout(timeout);
       timeout = setTimeout(() => {
         setIsScrolled(window.scrollY > 20);
       }, 100);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -24,15 +25,14 @@ export function Navbar() {
     };
   }, []);
 
-  // Use a "section" key for in-page sections; Get Involved is a normal route
-   const navLinks: (
+  const navLinks: (
     | { name: string; section: "mission" | "strategy" | "partners" }
     | { name: string; href: string }
   )[] = [
     { name: "Mission", section: "mission" },
     { name: "Strategy", section: "strategy" },
     { name: "Partners", section: "partners" },
-    { name: "Get Involved", href: "/civicdatatech/#/get-involved" },
+    { name: "Get Involved", href: "/get-involved" },
   ];
 
   const scrollToId = (id: string) => {
@@ -41,21 +41,7 @@ export function Navbar() {
     el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  const isOnHome = () => {
-    // Locally: "http://localhost:5173/#/"
-    // Deployed: "https://civicdatatech.github.io/civicdatatech/#/"
-    const { pathname, hash } = window.location;
-
-    const isLocal =
-      pathname === "/" &&
-      (hash === "" || hash === "#" || hash === "#/" || hash === "#");
-
-    const isDeployed =
-      pathname === BASE_PATH + "/" &&
-      (hash === "" || hash === "#" || hash === "#/" || hash === "#");
-
-    return isLocal || isDeployed;
-  };
+  const isOnHome = () => window.location.pathname === "/";
 
   const handleSectionClick =
     (section: "mission" | "strategy" | "partners") =>
@@ -66,8 +52,9 @@ export function Navbar() {
         // Already on home: just smooth-scroll
         scrollToId(section);
       } else {
-        // Coming from another page: navigate to home with query; Home page will scroll
-        window.location.href = `${BASE_PATH}/#/?section=${section}`;
+        // Navigate to home with ?section=... on the PATH
+        // Home's useEffect will read window.location.search and scroll
+        window.location.href = `/?section=${section}`;
       }
     };
 
@@ -80,7 +67,8 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="/civicdatatech/#/" className="flex items-center gap-2 group">
+        {/* Logo: simple path-based home link */}
+        <a href="/" className="flex items-center gap-2 group">
           <ShieldLogo className="h-8 w-8 group-hover:scale-105 transition-transform duration-300" />
           <span className="font-display font-bold text-xl tracking-tight text-foreground">
             Civic Data <span className="text-primary">Tech</span>
@@ -93,7 +81,7 @@ export function Navbar() {
             "section" in link ? (
               <a
                 key={link.name}
-                href={`/civicdatatech/#/?section=${link.section}`}
+                href={`/?section=${link.section}`}
                 onClick={handleSectionClick(link.section)}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer"
               >
@@ -131,7 +119,7 @@ export function Navbar() {
               "section" in link ? (
                 <a
                   key={link.name}
-                  href={`/civicdatatech/#/?section=${link.section}`}
+                  href={`/?section=${link.section}`}
                   onClick={(e) => {
                     handleSectionClick(link.section)(e);
                     setMobileMenuOpen(false);

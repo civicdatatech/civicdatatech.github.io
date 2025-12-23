@@ -17,7 +17,7 @@ export default function Home() {
     if (!el) return;
 
     const timeout = setTimeout(() => {
-      el.scrollIntoView({ behavior: "smooth", block: "start" }) ;
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 50);
 
     return () => clearTimeout(timeout);
