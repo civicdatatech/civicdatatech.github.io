@@ -20,15 +20,10 @@ const features = [
     description: "Combining AI technology with human-in-the-loop oversight to ensure the highest standards of data integrity."
   },
   {
-    icon: Search,
-    title: "Future Expansion",
-    description: "Planning to provide critical election information, candidate profiles, and detailed voting procedures."
-  },
-  // {
-  //   icon: Speaker,
-  //   title: "Advocacy for Data Standards",
-  //   description: "Working with federal, state and local governments to adopt data standards to improve access to data at all levels of government."
-  // }
+    icon: Speaker,
+    title: "Advocacy for Data Standards",
+    description: "Working with federal, state and local governments to adopt data standards to improve access to data at all levels of government."
+  }
 ];
 
 export function Mission() {
