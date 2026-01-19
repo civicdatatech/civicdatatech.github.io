@@ -1,6 +1,9 @@
+//// filepath: /Users/virginiadooley/Documents/civicdataproject/client/src/components/sections/Footer.tsx
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "wouter";
 import { ShieldLogo } from "@/components/ui/shield-logo";
+// import the unified icon png (adjust path if you placed it elsewhere)
+import unifiedIcon from "@/assets/unified-icon.png";
 
 export function Footer() {
   return (
@@ -16,40 +19,91 @@ export function Footer() {
               Fostering a more accessible, resilient, and participatory democracy for all through open data and collaboration.
             </p>
             <div className="flex gap-4">
-              <a href="https://www.linkedin.com/company/civic-data-tech/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors">
+              <a
+                href="https://www.linkedin.com/company/civic-data-tech/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://github.com/civicdatatech" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors">
+              <a
+                href="https://github.com/civicdatatech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
+              >
                 <Github className="h-5 w-5" />
               </a>
-              <a href="mailto:info@civicdata.tech" className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors">
+              <a
+                href="mailto:info@civicdata.tech"
+                className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
+              >
                 <Mail className="h-5 w-5" />
+              </a>
+              {/* New Unified icon */}
+              <a
+                href="https://unified.me/organization/27721/posts?invite=civicdata"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
+                aria-label="Unified organization posts"
+              >
+                <img
+                  src={unifiedIcon}
+                  alt="Unified"
+                  className="h-5 w-5 object-contain"
+                />
               </a>
             </div>
           </div>
-          
+
           <div>
             <h4 className="font-bold mb-4">Project</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><Link href="/" className="hover:text-background transition-colors cursor-pointer">Mission</Link></li>
-              <li><Link href="/strategy" className="hover:text-background transition-colors cursor-pointer">Strategy</Link></li>
-              <li><Link href="/" className="hover:text-background transition-colors cursor-pointer">Partners</Link></li>
-              <li><Link href="/get-involved" className="hover:text-background transition-colors cursor-pointer">Get Involved</Link></li>
+              <li>
+                <Link
+                  href="/"
+                  className="hover:text-background transition-colors cursor-pointer"
+                >
+                  Mission
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/strategy"
+                  className="hover:text-background transition-colors cursor-pointer"
+                >
+                  Strategy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="hover:text-background transition-colors cursor-pointer"
+                >
+                  Partners
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/get-involved"
+                  className="hover:text-background transition-colors cursor-pointer"
+                >
+                  Get Involved
+                </Link>
+              </li>
             </ul>
           </div>
-          
-          {/* <div>
-            <h4 className="font-bold mb-4">Legal</h4>
-            <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-background transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-background transition-colors">Terms of Use</a></li>
-              <li><a href="#" className="hover:text-background transition-colors">Data License</a></li>
-            </ul>
-          </div> */}
+
+          {/* ...optional Legal column... */}
         </div>
-        
+
         <div className="border-t border-background/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Civic Data Tech. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Civic Data Tech. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>
