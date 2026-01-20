@@ -1,8 +1,6 @@
-//// filepath: /Users/virginiadooley/Documents/civicdataproject/client/src/components/sections/Footer.tsx
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "wouter";
-import { ShieldLogo } from "@/components/ui/shield-logo";
-// import the unified icon png (adjust path if you placed it elsewhere)
+import civicDataTechLogo from "@/assets/generated_images/civic-data-tech-logo.png";
 import unifiedIcon from "@/assets/unified-icon.png";
 
 export function Footer() {
@@ -12,7 +10,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <ShieldLogo className="h-6 w-6" />
+              <img src={civicDataTechLogo} alt="Civic Data Tech Logo" className="h-6 w-6" />
               <h3 className="font-display font-bold text-2xl">Civic Data Tech</h3>
             </div>
             <p className="text-muted-foreground max-w-sm mb-6">

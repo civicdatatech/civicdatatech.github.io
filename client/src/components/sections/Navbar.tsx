@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ShieldLogo } from "@/components/ui/shield-logo";
+import civicDataTechLogo from "@/assets/generated_images/civic-data-tech-logo.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -69,7 +69,11 @@ export function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo: simple path-based home link */}
         <a href="/" className="flex items-center gap-2 group">
-          <ShieldLogo className="h-8 w-8 group-hover:scale-105 transition-transform duration-300" />
+          <img
+            src={civicDataTechLogo}
+            alt="Civic Data Tech logo"
+            className="h-8 w-8 group-hover:scale-105 transition-transform duration-300"
+          />
           <span className="font-display font-bold text-xl tracking-tight text-foreground">
             Civic Data <span className="text-primary">Tech</span>
           </span>
