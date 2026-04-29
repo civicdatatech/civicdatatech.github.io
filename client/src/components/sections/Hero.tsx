@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowRight, ChevronRight } from "lucide-react";
-import heroImage from "@assets/strategy_image_1765189746629.png";
+import { ArrowRight } from "lucide-react";
+// Add your hero image here - e.g., import heroImage from "@/assets/hero-image.png";
+// For now, using a gradient placeholder
 
 export function Hero() {
   return (
@@ -15,19 +16,15 @@ export function Hero() {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium mb-6">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
-              </span>
-              Building the Digital Foundation for Local Democracy
+              Supporting open-source civic data projects
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6 text-foreground">
-              Enhancing Access to <span className="text-primary block">Civic Information</span>
+              We make civic data accessible by sustaining the projects and maintainers behind it.
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
-              We unite organizations and citizens to build a verifiable, open dataset for local jurisdictions across the United States.
+              We invest in projects that fill gaps in civic data nationwide, ensuring the data stays open, verifiable, and reaches the communities that need it most.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -43,16 +40,18 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative h-96 md:h-full"
           >
-            <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl rounded-full opacity-50" />
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-card/50 backdrop-blur-sm">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/10 to-primary/5 blur-3xl rounded-3xl opacity-60" />
+            <div className="absolute inset-0 rounded-3xl border border-border/30 bg-card/30 backdrop-blur-sm" />
+            {/* 
+              Uncomment and add your hero image here:
               <img 
                 src={heroImage} 
                 alt="Civic Data Network Visualization" 
-                className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
+                className="absolute inset-0 w-full h-full object-cover rounded-3xl"
               />
-            </div>
+            */}
           </motion.div>
         </div>
       </div>
