@@ -30,7 +30,7 @@ export function Navbar() {
     | { name: string; href: string }
   )[] = [
     { name: "Mission", section: "mission" },
-    { name: "Strategy", section: "strategy" },
+    { name: "Strategy", href: "/strategy" },
     { name: "Partners", section: "partners" },
     { name: "Get Involved", href: "/get-involved" },
   ];
