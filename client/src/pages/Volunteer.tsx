@@ -35,6 +35,16 @@ export function Volunteer() {
               <span className="font-semibold">PyCon 2026</span>
             </div>
           </div>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="bg-primary hover:bg-primary/90" asChild>
+              <a href="mailto:info@civicdata.tech">Join the Sprint</a>
+            </Button>
+            <Button variant="outline" asChild>
+              <a href="#remote-volunteers" className="cursor-pointer">
+                Not Attending? Volunteer Remotely
+              </a>
+            </Button>
+          </div>
         </motion.div>
 
         {/* Why Attend */}
@@ -173,7 +183,7 @@ export function Volunteer() {
                   rel="noopener noreferrer"
                   className="text-primary font-medium hover:underline"
                 >
-                  Unified
+                  Find us on Unified
                 </a>{" "}
                 and/or connect with us via email at{" "}
                 <a href="mailto:info@civicdata.tech" className="text-primary font-medium hover:underline">
@@ -206,20 +216,90 @@ export function Volunteer() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-3xl mx-auto text-center bg-card border border-border rounded-2xl p-8 md:p-12"
+          className="max-w-3xl mx-auto text-center bg-card border border-border rounded-2xl p-8 md:p-12 mb-20"
+          id="remote-volunteers"
         >
-          <h2 className="text-3xl font-bold mb-4">Ready to Make an Impact?</h2>
+          <h2 className="text-3xl font-bold mb-4">Can't Make It to PyCon? No Problem.</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Get in touch and let us know you're interested in joining the Civic Data Tech Sprint.
+            We're recruiting volunteers to maintain and improve civic data for every state. Help us crowdsource and verify representative data from your state with training, demo videos, and community support.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-primary hover:bg-primary/90" asChild>
-              <a href="mailto:info@civicdata.tech">Contact Us</a>
-            </Button>
-            <Button variant="outline" asChild>
-              <Link href="/">Back to Home</Link>
-            </Button>
+
+          <div className="mb-12 text-left">
+            <h3 className="text-xl font-semibold mb-6 text-center">State Maintainer Role</h3>
+            <div className="space-y-6">
+              <div>
+                <h4 className="font-semibold text-primary mb-3 flex items-center gap-2">
+                  <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-primary text-primary-foreground text-sm">
+                    1
+                  </span>
+                  Claim Your State
+                </h4>
+                <p className="text-muted-foreground ml-10">
+                  Pick one or more states you're interested in maintaining. We'll guide you through the process.
+                </p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-primary mb-3 flex items-center gap-2">
+                  <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-primary text-primary-foreground text-sm">
+                    2
+                  </span>
+                  Maintain Data Quality
+                </h4>
+                <p className="text-muted-foreground ml-10">
+                  Set up role configurations, log scrape issues, and ensure data accuracy for your state. We help you organize and prioritize the work.
+                </p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-primary mb-3 flex items-center gap-2">
+                  <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-primary text-primary-foreground text-sm">
+                    3
+                  </span>
+                  Update Jurisdictions Data
+                </h4>
+                <p className="text-muted-foreground ml-10">
+                  Maintain jurisdiction information like website URLs. You won't do this alone—we crowdsource reviews, especially for initial scrapes.
+                </p>
+              </div>
+            </div>
           </div>
+
+          <div className="bg-secondary/30 rounded-xl p-6 mb-8">
+            <p className="text-muted-foreground mb-4">
+              <strong>What We Provide:</strong>
+            </p>
+            <ul className="space-y-2 text-muted-foreground text-left">
+              <li className="flex gap-2">
+                <span className="text-primary">✓</span>
+                <span>Demo videos and step-by-step training</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-primary">✓</span>
+                <span>Direct support from the Civic Data Tech team</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-primary">✓</span>
+                <span>Community of fellow state maintainers</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-primary">✓</span>
+                <span>Access to verified, a data verification platform</span>
+              </li>
+            </ul>
+          </div>
+
+          <p className="text-lg text-muted-foreground mb-8">
+            Ready to help strengthen civic data for your state? Let's connect.
+          </p>
+          <Button className="bg-primary hover:bg-primary/90" asChild>
+            <a
+              href="https://unified.me/organization/27721/posts?invite=civicdata"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-medium hover:underline"
+            >
+              Join us on Unified to become a State Maintainer
+            </a>
+          </Button>
         </motion.div>
       </div>
     </div>
