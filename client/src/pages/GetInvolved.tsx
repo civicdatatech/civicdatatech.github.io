@@ -92,7 +92,35 @@ export function GetInvolved() {
           </div>
 
           <div className="mt-20 text-center">
-            <h3 className="text-2xl font-bold mb-6">Ready to Contribute?</h3>
+            <h3 className="text-2xl font-bold mb-6">Support Us Financially</h3>
+            <div className="max-w-3xl mx-auto bg-card border border-border/50 rounded-xl p-8 mb-12 text-left">
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Civic Data Tech is pursuing <strong>501(c)(3) nonprofit status</strong>. In the meantime, we're accruing real costs for hosting, digital infrastructure, and maintaining the open-source projects we support.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                <strong>Currently, donations are not tax-deductible</strong>, but they directly fund:
+              </p>
+              <ul className="space-y-2 text-muted-foreground mb-6">
+                <li className="flex gap-3">
+                  <span className="text-primary">•</span>
+                  <span>Cloud hosting and server infrastructure</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary">•</span>
+                  <span>Development and maintenance of civic data tools</span>
+                </li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed">
+                Once we achieve 501(c)(3) status, all contributions will be tax-deductible retroactively. If you'd like to support our mission, every contribution helps.
+              </p>
+            </div>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 h-12 px-8 text-base mb-8" asChild>
+              <a href="https://www.buymeacoffee.com/civicdatatech" target="_blank" rel="noopener noreferrer">
+                Support Civic Data Tech
+              </a>
+            </Button>
+
+            <h3 className="text-2xl font-bold mb-6 mt-16">Ready to Contribute?</h3>
             <p className="text-muted-foreground mb-8">
               Reach out to us directly to discuss how you can help support a more informed democracy.
             </p>

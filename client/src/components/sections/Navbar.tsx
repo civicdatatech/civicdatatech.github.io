@@ -1,6 +1,6 @@
 //// filepath: /Users/virginiadooley/Documents/civicdataproject/client/src/components/sections/Navbar.tsx
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import civicDataTechLogo from "@/assets/generated_images/civic-data-tech-logo.png";
 
@@ -104,6 +104,12 @@ export function Navbar() {
           <Button className="bg-primary hover:bg-primary/90" asChild>
             <a href="mailto:info@civicdata.tech">Contact Us</a>
           </Button>
+          <Button variant="outline" size="sm" asChild>
+            <a href="https://www.buymeacoffee.com/civicdatatech" target="_blank" rel="noopener noreferrer">
+              <Heart className="h-4 w-4 mr-1 text-red-500 fill-red-500" />
+              Support
+            </a>
+          </Button>
         </div>
 
         {/* Mobile Toggle */}
@@ -145,6 +151,12 @@ export function Navbar() {
             )}
             <Button className="w-full mt-4" asChild>
               <a href="mailto:info@civicdata.tech">Contact Us</a>
+            </Button>
+            <Button variant="outline" className="w-full" asChild>
+              <a href="https://www.buymeacoffee.com/civicdatatech" target="_blank" rel="noopener noreferrer">
+                <Heart className="h-4 w-4 mr-1 text-red-500 fill-red-500" />
+                Support Us
+              </a>
             </Button>
           </div>
         </div>
