@@ -18,9 +18,9 @@ const features = [
 	},
 	{
 		icon: Shield,
-		title: "Open & Verifiable",
+		title: "Open Standards & Accessibility",
 		description:
-			"Ensuring the tools and data remain open-source and auditable so communities can rely on them.",
+			"Ensuring civic data stays open-source, auditable, and governed by standards that work across all levels of government.",
 	},
 	{
 		icon: Search,
