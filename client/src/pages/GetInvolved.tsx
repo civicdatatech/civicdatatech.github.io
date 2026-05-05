@@ -1,8 +1,14 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Server, Megaphone, Code } from "lucide-react";
+import { useEffect } from "react";
 
 export function GetInvolved() {
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
+
   return (
     <div className="min-h-screen bg-background pt-32 pb-20">
       <div className="container mx-auto px-6 max-w-4xl">
