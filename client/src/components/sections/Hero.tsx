@@ -2,8 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
-// Add your hero image here - e.g., import heroImage from "@/assets/hero-image.png";
-// For now, using a gradient placeholder
+import heroImage from "@/assets/strategy_image_1765189746629.png";
 
 export function Hero() {
   return (
@@ -40,18 +39,13 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative h-96 md:h-full"
+            className="relative w-full rounded-3xl overflow-hidden border border-border/30"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/10 to-primary/5 blur-3xl rounded-3xl opacity-60" />
-            <div className="absolute inset-0 rounded-3xl border border-border/30 bg-card/30 backdrop-blur-sm" />
-            {/* 
-              Uncomment and add your hero image here:
-              <img 
-                src={heroImage} 
-                alt="Civic Data Network Visualization" 
-                className="absolute inset-0 w-full h-full object-cover rounded-3xl"
-              />
-            */}
+            <img 
+              src={heroImage} 
+              alt="Civic Data Network Visualization" 
+              className="w-full h-auto display-block"
+            />
           </motion.div>
         </div>
       </div>
