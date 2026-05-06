@@ -99,6 +99,84 @@ export function GetInvolved() {
             <Button size="lg" variant="outline" className="h-12 px-8 text-base" asChild>
               <a href="mailto:info@civicdata.tech">Contact Us at info@civicdata.tech</a>
             </Button>
+
+            {/* State Maintainer Volunteer Section */}
+            <div className="mt-20 pt-20 border-t border-border">
+              <h3 className="text-3xl font-bold mb-6">Become a State Data Maintainer</h3>
+              <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+                We're recruiting volunteers to maintain and improve civic data for every state. Help us crowdsource and verify representative data from your state with training, demo videos, and community support.
+              </p>
+
+              <div className="mb-12 text-left max-w-3xl mx-auto">
+                <h4 className="text-xl font-semibold mb-8 text-center">What State Maintainers Do</h4>
+                <div className="space-y-6">
+                  <div>
+                    <h5 className="font-semibold text-primary mb-3 flex items-center gap-2">
+                      <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-primary text-primary-foreground text-sm">
+                        1
+                      </span>
+                      Claim Your State
+                    </h5>
+                    <p className="text-muted-foreground ml-10">
+                      Pick one or more states you're interested in maintaining. We'll guide you through the process.
+                    </p>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-primary mb-3 flex items-center gap-2">
+                      <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-primary text-primary-foreground text-sm">
+                        2
+                      </span>
+                      Maintain Data Quality
+                    </h5>
+                    <p className="text-muted-foreground ml-10">
+                      Set up role configurations, log scrape issues, and ensure data accuracy for your state. We help you organize and prioritize the work.
+                    </p>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-primary mb-3 flex items-center gap-2">
+                      <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-primary text-primary-foreground text-sm">
+                        3
+                      </span>
+                      Update Jurisdictions Data
+                    </h5>
+                    <p className="text-muted-foreground ml-10">
+                      Maintain jurisdiction information like website URLs. You won't do this alone—we crowdsource reviews, especially for initial scrapes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-secondary/30 rounded-xl p-6 mb-8 max-w-3xl mx-auto">
+                <p className="text-muted-foreground mb-4 text-left">
+                  <strong>What We Provide:</strong>
+                </p>
+                <ul className="space-y-2 text-muted-foreground text-left">
+                  <li className="flex gap-2">
+                    <span className="text-primary">✓</span>
+                    <span>Demo videos and step-by-step training</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary">✓</span>
+                    <span>Direct support from the Civic Data Tech team</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary">✓</span>
+                    <span>Community of fellow state maintainers</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary">✓</span>
+                    <span>Access to verified, a data verification platform</span>
+                  </li>
+                </ul>
+              </div>
+
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Ready to help strengthen civic data for your state? Let's connect.
+              </p>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 h-12 px-8 text-base" asChild>
+                <a href="mailto:info@civicdata.tech">Become a State Maintainer</a>
+              </Button>
+            </div>
           </div>
 
         </motion.div>
