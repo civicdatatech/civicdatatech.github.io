@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 import { Link } from "wouter";
 import civicDataTechLogo from "@/assets/generated_images/civic-data-tech-logo.png";
 import unifiedIcon from "@/assets/unified-icon.png";
@@ -52,6 +52,15 @@ export function Footer() {
                   alt="Unified"
                   className="h-5 w-5 object-contain"
                 />
+              </a>
+              <a
+                href="https://www.buymeacoffee.com/civicdatatech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
+                aria-label="Support us on Buy Me a Coffee"
+              >
+                <Heart className="h-5 w-5 text-red-500 fill-red-500" />
               </a>
             </div>
           </div>
