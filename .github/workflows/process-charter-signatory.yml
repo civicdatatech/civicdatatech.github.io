@@ -1,0 +1,90 @@
+name: Process Charter Signatory
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  process-signatory:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'charter-signatory')
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Parse issue and extract signatory data
+        id: parse
+        run: |
+          # Extract data from issue body using regex
+          NAME=$(echo "${{ github.event.issue.body }}" | grep "^**Name:**" | sed 's/.*\*\*Name:\*\*[[:space:]]*//' | head -n1)
+          EMAIL=$(echo "${{ github.event.issue.body }}" | grep "^**Email:**" | sed 's/.*\*\*Email:\*\*[[:space:]]*//' | head -n1)
+          ORG=$(echo "${{ github.event.issue.body }}" | grep "^**Organization:**" | sed 's/.*\*\*Organization:\*\*[[:space:]]*//' | head -n1)
+          ROLE=$(echo "${{ github.event.issue.body }}" | grep "^**Role/Title:**" | sed 's/.*\*\*Role\/Title:\*\*[[:space:]]*//' | head -n1)
+          CATEGORY=$(echo "${{ github.event.issue.body }}" | grep "^**Category:**" | sed 's/.*\*\*Category:\*\*[[:space:]]*//' | head -n1)
+          
+          echo "name=$NAME" >> $GITHUB_OUTPUT
+          echo "email=$EMAIL" >> $GITHUB_OUTPUT
+          echo "organization=$ORG" >> $GITHUB_OUTPUT
+          echo "role=$ROLE" >> $GITHUB_OUTPUT
+          echo "category=$CATEGORY" >> $GITHUB_OUTPUT
+      
+      - name: Update signatories file
+        run: |
+          python3 << 'EOF'
+          import json
+          from datetime import datetime
+          
+          # Read existing signatories
+          try:
+              with open('data/signatories.json', 'r') as f:
+                  signatories = json.load(f)
+          except FileNotFoundError:
+              signatories = []
+          
+          # Add new signatory (skip the example one if it's the only one)
+          if len(signatories) == 1 and signatories[0].get("name") == "Example Signatory":
+              signatories = []
+          
+          new_signatory = {
+              "name": "${{ steps.parse.outputs.name }}",
+              "email": "${{ steps.parse.outputs.email }}",
+              "organization": "${{ steps.parse.outputs.organization }}",
+              "role": "${{ steps.parse.outputs.role }}",
+              "category": "${{ steps.parse.outputs.category }}",
+              "signed_date": datetime.now().isoformat()
+          }
+          
+          # Check for duplicates
+          if not any(s.get("email") == new_signatory["email"] for s in signatories):
+              signatories.append(new_signatory)
+          
+          # Write updated signatories
+          with open('data/signatories.json', 'w') as f:
+              json.dump(signatories, f, indent=2)
+          EOF
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Charter Signatory Bot"
+          git add data/signatories.json
+          git commit -m "Add charter signatory: ${{ steps.parse.outputs.name }}" || echo "No changes to commit"
+          git push
+      
+      - name: Close issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "✅ Thank you for signing the Civic Data Tech Charter! Your name has been added to our growing list of signatories. Together, we're building the data infrastructure democracy deserves."
+            });
+            github.rest.issues.update({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            });

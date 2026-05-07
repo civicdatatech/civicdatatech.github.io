@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import { CheckCircle2, MapPin, Users, Shield, BarChart3 } from "lucide-react";
 import { useEffect } from "react";
+import { CharterSignForm } from "@/components/forms/CharterSignForm";
 
 export function Charter() {
   useEffect(() => {
@@ -387,27 +387,19 @@ export function Charter() {
           </p>
         </motion.div>
 
-        {/* CTA */}
+        {/* CTA with Form */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center"
+          className="bg-card border border-border/50 rounded-2xl p-8 md:p-12"
         >
           <h2 className="text-3xl font-bold mb-6">Ready to Sign the Charter?</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Add your name and organization to this growing movement for open civic data standards. We'll use the list of signatory to build community and advocate for systemic change.
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
+            Add your name and organization to this growing movement for open civic data standards. Your submission will be recorded, and we'll feature signatories on this page as we build community power and work toward systemic change.
           </p>
-          <Button size="lg" className="h-12 px-8 text-base" asChild>
-            <a 
-              href="mailto:info@civicdata.tech?subject=Sign the Civic Data Tech Charter&body=I%20would%20like%20to%20sign%20the%20Civic%20Data%20Tech%20Charter.%0A%0AName:%0AOrganization:%0ARole/Title:%0A%0AMessage:%0A"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Sign the Charter
-            </a>
-          </Button>
+          <CharterSignForm />
         </motion.div>
       </div>
     </section>
