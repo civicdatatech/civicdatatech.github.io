@@ -292,7 +292,7 @@ export function Volunteer() {
           </p>
           <Button className="bg-primary hover:bg-primary/90" asChild>
             <a
-              href="https://unified.me/organization/27721/posts?invite=civicdata"
+              href="https://unified.me/chat/!HQloUuiqtsUEjVYPqZ"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary font-medium hover:underline"
