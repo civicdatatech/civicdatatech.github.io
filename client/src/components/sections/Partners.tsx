@@ -9,7 +9,7 @@ const supportedProjects = [
   },
   {
     name: "OpenStates (by PluralPolicy)",
-    url: "https://openstates.org/",
+    url: "https://open.pluralpolicy.com/",
     description:
       "Aggregates and publishes state legislative data (bills, legislators, committees) to make state government more transparent and accessible." 
   }
