@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp docs/index.html docs/404.html",
     "preview": "vite preview",
     "test": "vitest --config client/vitest.config.js"
   },
