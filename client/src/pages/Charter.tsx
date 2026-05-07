@@ -197,6 +197,153 @@ export function Charter() {
           </div>
         </motion.div>
 
+        {/* Our Plans for the Charter */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="bg-card border border-border/50 rounded-2xl p-8 md:p-12 mb-16"
+        >
+          <h2 className="text-3xl font-bold mb-6">Our Plans for the Charter: Building Power for Real Change</h2>
+          
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            This charter is not performative. We're building it because we need collective power to drive systemic change in civic data standards. Here's how we plan to use your signature and this growing movement:
+          </p>
+
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-xl font-bold mb-3">1. Convening & Standard-Setting Working Groups</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                We'll organize working groups of charter signatories—developers, election advocates, journalists, government officials, and maintainers—to collectively design interoperable standards for:
+              </p>
+              <ul className="space-y-2 ml-4">
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground"><strong>Jurisdiction boundaries and district definitions</strong> (to enable gerrymandering detection)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground"><strong>Representative metadata</strong> (name, office, contact, voting record links)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground"><strong>Data quality & verification</strong> (how to validate accuracy and currency)</span>
+                </li>
+              </ul>
+              <p className="text-muted-foreground mt-4">
+                These standards will be open, community-reviewed, and owned collectively—not by any single company or government.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3">2. Implementation & Adoption Roadmap</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Once standards are drafted, we'll:
+              </p>
+              <ul className="space-y-2 ml-4">
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Partner with existing civic data projects (OpenStates, CivicPatch) to implement the standards</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Work with states, counties, and municipalities to adopt and publish data using these standards</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Provide technical support and funding to jurisdictions implementing open data standards</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Document best practices and publish implementation guides that other communities can follow</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3">3. Advocacy & Regulatory Change</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                We'll leverage the collective voice of charter signatories to:
+              </p>
+              <ul className="space-y-2 ml-4">
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Advocate for state and federal policies requiring open civic data standards</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Pressure vendors and platforms to implement interoperable data formats (no more proprietary silos)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Build coalitions with election protection organizations to demand better data access for redistricting oversight</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Publish reports documenting where civic data gaps exist and how they enable gerrymandering</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3">4. Tools & Resource Building</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                We'll fund and develop:
+              </p>
+              <ul className="space-y-2 ml-4">
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Open-source tools for jurisdictions to publish and maintain representative data</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">APIs and data pipelines that make standardized civic data easy to access and use</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Training and documentation for communities adopting these standards</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Audit dashboards showing data coverage, quality, and equity progress</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3">5. Community Power & Accountability</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Most importantly, we'll use the growing list of charter signatories to:
+              </p>
+              <ul className="space-y-2 ml-4">
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Build a coalition that speaks with one voice demanding open civic data standards</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Hold signatories accountable to the charter commitments through regular check-ins and progress reports</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Celebrate victories publicly—when jurisdictions adopt standards, when APIs launch, when legislation passes</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-accent">→</span>
+                  <span className="text-muted-foreground">Organize direct action when needed—citizen comment campaigns, media outreach, public events</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-border/50 mt-8 pt-8">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              <strong>Why your signature matters:</strong> This isn't about collecting names for a feel-good website. We're building a documented coalition of developers, advocates, journalists, and community leaders who are committed to systemic change. When we approach a government, a vendor, or a funder, we can point to this charter and say: "Here are hundreds/thousands of people who believe civic data must be open and standardized." That's power. That creates accountability. That drives change.
+            </p>
+          </div>
+        </motion.div>
+
         {/* Who Can Sign */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
