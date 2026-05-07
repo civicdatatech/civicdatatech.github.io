@@ -174,7 +174,7 @@ export function GetInvolved() {
                 Ready to help strengthen civic data for your state? Let's connect.
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90 h-12 px-8 text-base" asChild>
-                <a href="mailto:info@civicdata.tech">Become a State Maintainer</a>
+                <a href="https://unified.me/chat/!HQloUuiqtsUEjVYPqZ">Become a State Maintainer</a>
               </Button>
             </div>
           </div>
