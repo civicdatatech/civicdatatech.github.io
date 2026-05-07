@@ -69,6 +69,45 @@ export function Strategy() {
             </div>
           </div>
 
+          {/* The Local District Gap */}
+          <div className="bg-accent/5 border border-accent/20 rounded-2xl p-8 md:p-12 mb-20">
+            <div className="max-w-3xl mx-auto">
+              <h3 className="text-2xl font-bold font-display mb-6">The Local District Gap: Where Real Change Happens</h3>
+              <div className="space-y-6 text-muted-foreground">
+                <p>
+                  There are civic data standards in place—OpenStates provides excellent state legislature data, and federal data exists through official channels. But there's an acute gap at the local and district level, where grassroots democracy actually happens.
+                </p>
+                <p>
+                  When voters need to know who represents them on city council, school board, county commission, or water district—that's where the data fragmentizes. That's where resources disappear. That's where marginalized communities get left behind.
+                </p>
+                <div className="bg-background rounded-lg p-6 border border-accent/30">
+                  <h4 className="font-bold mb-3 text-foreground">Why the Local District Level Matters</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-3">
+                      <span className="text-accent font-bold">•</span>
+                      <span>School boards, county commissions, and water districts control billions in spending—directly affecting your child's education and your community's resources</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-accent font-bold">•</span>
+                      <span>Voter engagement at the local level determines turnout and political power in state and federal elections</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-accent font-bold">•</span>
+                      <span>Gerrymandering starts with district boundary data—and local districts are the hardest to access and standardize</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-accent font-bold">•</span>
+                      <span>Under-resourced jurisdictions rarely have staff to maintain clean datasets, making community organizing nearly impossible</span>
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  CivicPatch and OpenStates are filling this gap—but they need sustained support to reach every municipality, every school district, every special district in the country. That's what we're here to enable.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Initial Phase & Future */}
           <div className="bg-secondary/30 rounded-2xl p-8 md:p-12 mb-20">
              <div className="max-w-3xl mx-auto">

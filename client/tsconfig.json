@@ -2,9 +2,11 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "jsx": "react-jsx",
+    "resolveJsonModule": true,
     "paths": {
       "@/*": ["*"],
-      "@assets/*": ["assets/*"]
+      "@assets/*": ["assets/*"],
+      "@data/*": ["../data/*"]
     }
   },
   "include": ["src"], 
