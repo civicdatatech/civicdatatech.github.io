@@ -19,7 +19,7 @@ export function Hero() {
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6 text-foreground">
-              We make civic data accessible by sustaining the projects and maintainers behind it.
+              Data fragmentation isn't just a technical problem - it's a democratic one.
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
@@ -49,8 +49,7 @@ export function Hero() {
           </motion.div>
         </div>
       </div>
-      
-      {/* Background Decor */}
+    
       <div className="absolute top-0 right-0 -z-10 w-1/3 h-1/2 bg-gradient-to-b from-primary/5 to-transparent blur-3xl" />
       <div className="absolute bottom-0 left-0 -z-10 w-1/3 h-1/2 bg-gradient-to-t from-accent/5 to-transparent blur-3xl" />
     </section>

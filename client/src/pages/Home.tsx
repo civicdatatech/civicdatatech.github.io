@@ -1,6 +1,7 @@
 //// filepath: /Users/virginiadooley/Documents/civicdataproject/client/src/pages/Home.tsx
 import { useEffect } from "react";
 import { Hero } from "@/components/sections/Hero";
+import { Problem } from "@/components/sections/Problem";
 import { Mission } from "@/components/sections/Mission";
 import { Partners } from "@/components/sections/Partners";
 
@@ -26,6 +27,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Problem />
       <Mission />
       <Partners />
     </>
