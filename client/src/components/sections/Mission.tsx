@@ -34,18 +34,14 @@ export function Mission() {
 	return (
 		<section id="mission" className="py-24 bg-secondary/30">
 			<div className="container mx-auto px-6">
-				<div className="text-center max-w-3xl mx-auto mb-16">
-					<h2 className="text-3xl md:text-4xl font-bold mb-4">
-						Our Mission & Purpose
-					</h2>
-					<p className="text-lg text-muted-foreground">
-						We support the open-source projects and maintainers that power civic
-						data pipelines, helping ensure civic data stays accessible, verifiable,
-						and ready for the communities that depend on it.
-					</p>
-				</div>
-
-				<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+			<div className="text-center max-w-3xl mx-auto mb-16">
+				<h2 className="text-3xl md:text-4xl font-bold mb-4">
+					Our Mission & Purpose
+				</h2>
+				<p className="text-lg text-muted-foreground">
+					Civic Data Tech is a member-driven 501(c)(6) association dedicated to sustaining the open-source civic data infrastructure that powers transparent government. Together, we support projects, empower maintainers, and build a collaborative community of civic tech advocates.
+				</p>
+			</div>				<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 					{features.map((feature, index) => (
 						<motion.div
 							key={index}

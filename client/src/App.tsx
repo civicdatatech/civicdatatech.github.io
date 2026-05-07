@@ -10,6 +10,7 @@ import Home from "@/pages/Home";
 import { GetInvolved } from "@/pages/GetInvolved";
 import { Strategy } from "@/pages/Strategy";
 import { Volunteer } from "@/pages/Volunteer";
+import { Membership } from "@/pages/Membership";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 
@@ -25,6 +26,7 @@ function AppRouter() {
             <Route path="/get-involved" component={GetInvolved} />
             <Route path="/strategy" component={Strategy} />
             <Route path="/volunteer" component={Volunteer} />
+            <Route path="/membership" component={Membership} />
             <Route component={NotFound} />
           </Switch>
         </main>

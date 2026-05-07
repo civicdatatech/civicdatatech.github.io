@@ -92,9 +92,45 @@ export function GetInvolved() {
           </div>
 
           <div className="mt-20 text-center">
-            <h3 className="text-2xl font-bold mb-6">Ready to Contribute?</h3>
+            <h3 className="text-2xl font-bold mb-6">Support Our Member-Driven Association</h3>
+            <div className="max-w-3xl mx-auto bg-card border border-border/50 rounded-xl p-8 mb-12 text-left">
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Civic Data Tech is a <strong>501(c)(6) business association</strong> dedicated to sustaining open-source civic data infrastructure. We're supported by members and contributors who believe in collaborative, transparent government data.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                <strong>Member dues and donations may be tax-deductible as ordinary business expenses</strong> (consult your tax advisor). Your support directly funds:
+              </p>
+              <ul className="space-y-2 text-muted-foreground mb-6">
+                <li className="flex gap-3">
+                  <span className="text-primary">•</span>
+                  <span>Cloud hosting and server infrastructure</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary">•</span>
+                  <span>Development and maintenance of civic data tools</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary">•</span>
+                  <span>Support for open-source project maintainers</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary">•</span>
+                  <span>Community events, hackathons, and member collaboration</span>
+                </li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed">
+                As a member-supported association, we thrive on the collective commitment to making civic data accessible to all. Whether you're an organization, developer, or civic tech advocate, your membership strengthens our shared mission.
+              </p>
+            </div>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 h-12 px-8 text-base mb-8" asChild>
+              <a href="https://www.buymeacoffee.com/civicdatatech" target="_blank" rel="noopener noreferrer">
+                Become a Member or Supporter
+              </a>
+            </Button>
+
+            <h3 className="text-2xl font-bold mb-6 mt-16">Ready to Collaborate?</h3>
             <p className="text-muted-foreground mb-8">
-              Reach out to us directly to discuss how you can help support a more informed democracy.
+              Reach out to us directly to discuss membership, partnerships, or how you can contribute to our association's mission.
             </p>
             <Button size="lg" variant="outline" className="h-12 px-8 text-base" asChild>
               <a href="mailto:info@civicdata.tech">Contact Us at info@civicdata.tech</a>

@@ -15,11 +15,11 @@ export function Hero() {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium mb-6">
-              Supporting open-source civic data projects
+              A member-driven association for open-source civic data
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6 text-foreground">
-              We make civic data accessible by sustaining the projects and maintainers behind it.
+              We're a collaborative association sustaining open-source civic data projects and their maintainers.
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
@@ -30,6 +30,11 @@ export function Hero() {
               <Button size="lg" className="h-12 px-8 text-base" asChild>
                 <Link href="/get-involved">
                   Join the Initiative <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button size="lg" className="h-12 px-8 text-base" variant="outline" asChild>
+                <Link href="/membership">
+                  Become a Member
                 </Link>
               </Button>
             </div>
