@@ -23,13 +23,13 @@ export function Hero() {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
-              We invest in projects that fill gaps in civic data nationwide, ensuring the data stays open, verifiable, and reaches the communities that need it most.
+              We unite the civic tech community and invest in projects that fill gaps in civic data nationwide, ensuring the data stays open, verifiable, and reaches the communities that need it most.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="h-12 px-8 text-base" asChild>
                 <Link href="/get-involved">
-                  Join the Initiative <ArrowRight className="ml-2 h-4 w-4" />
+                  Join the Community <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
