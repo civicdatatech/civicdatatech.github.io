@@ -20,7 +20,7 @@ export function Volunteer() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Civic Data Tech Sprint at PyCon 2026
+            Civic Data Tech Sprint at PyCon US 2026
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
             Join us for our first hack-a-thon focused on advancing open-source civic data projects.
