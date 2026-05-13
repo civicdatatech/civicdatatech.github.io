@@ -116,7 +116,7 @@ export function Volunteer() {
               <CardContent>
                 <p className="text-muted-foreground">
                   Introductions, project overviews, and team formation. Dive into your first tasks with guidance from
-                  experienced maintainers.
+                  experienced maintainers. More info here: <a href="https://www.pycon.org/2026/sprints/">PyCon US 2026 Sprints</a>
                 </p>
               </CardContent>
             </Card>
