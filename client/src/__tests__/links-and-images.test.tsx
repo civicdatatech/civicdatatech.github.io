@@ -51,10 +51,10 @@ describe("Site links and images", () => {
     }
   });
 
-  it("hero Join the Initiative button points to /get-involved route", () => {
+  it("hero Join the community button points to /get-involved route", () => {
     render(<App />);
 
-    const cta = screen.getByText(/join the initiative/i).closest("a");
+    const cta = screen.getByText(/join the community/i).closest("a");
     expect(cta).not.toBeNull();
 
     const href = cta!.getAttribute("href");
