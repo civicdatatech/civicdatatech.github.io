@@ -20,10 +20,10 @@ export function Volunteer() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Civic Data Tech Sprint at PyCon US 2026
+            Civic Data Tech Development Sprint at PyCon US 2026
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Join us for our first hack-a-thon focused on advancing open-source civic data projects.
+            Join us for our first sprintfocused on advancing open-source civic data projects.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center gap-2 text-lg">
