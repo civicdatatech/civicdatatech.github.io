@@ -12,7 +12,7 @@ export function Banner() {
       <div className="container mx-auto flex items-center justify-between gap-4">
         <div className="flex-1 text-center">
           <p className="text-sm md:text-base font-medium">
-            🎉 Join us at PyCon US on May 18/19 for our first Civic Data Tech Sprint
+            🎉 Join us at PyCon US on May 18 for our first Civic Data Tech Sprint
           </p>
         </div>
         <Link
