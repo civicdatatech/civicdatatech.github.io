@@ -13,6 +13,9 @@ No compilation is required for this site. All files are static HTML and CSS. You
 3. In your repository settings on GitHub, go to the **Pages** section.
 4. Set the source branch to `main` (or your default branch) and the root directory (`/`).
 
+### Blog Posts
+Create a branch named after the blog post title. Create a markdown file and use the format of [this post](client/src/blog/posts/01-welcome.md) as a guide. Commit the post, raise a PR and tag @VirginiaDooley for review. 
+
 ### Local Preview (Optional)
 If you want to preview the site locally with Jekyll (optional, not required for static HTML):
 
