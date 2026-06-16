@@ -20,7 +20,7 @@ export function GetInvolved() {
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold font-display mb-6">Get Involved</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Help us build a more informed democracy. There are many ways to contribute to the Civic Data Tech initiative.
+              Help us sustain civic data infrastructure. There are many ways to contribute to the Civic Data Tech initiative.
             </p>
           </div>
 
@@ -29,7 +29,7 @@ export function GetInvolved() {
             <div className="relative z-10">
               <h2 className="text-3xl font-bold mb-4">Join the Community</h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-                Connect with other contributors, participate in discussions, and stay updated on our progress.
+                Connect with builders, maintainers, contributors, and civic tech advocates. Participate in discussions and stay updated on our progress.
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90 h-12 px-8 text-base" asChild>
                 <a href="https://unified.me/organization/27721/posts?invite=civicdata" target="_blank" rel="noopener noreferrer">
@@ -52,9 +52,9 @@ export function GetInvolved() {
                   <Server className="h-8 w-8" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-3">Hosting Support & Infrastructure</h3>
+                  <h3 className="text-2xl font-bold mb-3">Hosting & Technical Infrastructure</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We are looking for partners who can offer reliable and scalable hosting solutions, cloud resources, or technical infrastructure expertise to support our growing data sets and user base. Contributions in this area are crucial for the stability and reach of our platform.
+                    We're seeking partners who can provide reliable hosting, cloud resources, or technical infrastructure expertise to support our projects. These contributions directly enable maintainers to serve their communities reliably.
                   </p>
                 </div>
               </div>
@@ -67,9 +67,9 @@ export function GetInvolved() {
                   <Megaphone className="h-8 w-8" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-3">Project Promotion & Outreach</h3>
+                  <h3 className="text-2xl font-bold mb-3">Community Amplification & Partnerships</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Help us spread the word! If you or your organization can assist in promoting Civic Data Tech to wider audiences – including civic groups, academic institutions, media outlets, and technological communities – your advocacy will be invaluable in attracting both users and potential collaborators.
+                    Help us connect maintainers with the communities they serve. If you or your organization can assist in promoting our supported projects to civic groups, media, academic institutions, and tech communities, your advocacy helps sustain and grow this infrastructure.
                   </p>
                 </div>
               </div>
@@ -82,9 +82,9 @@ export function GetInvolved() {
                   <Code className="h-8 w-8" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-3">Development & Data Contribution</h3>
+                  <h3 className="text-2xl font-bold mb-3">Development & Community Contribution</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Individuals and organizations with expertise in data science, software development, data verification, or civic engagement are invited to join our collaborative. Your skills can directly contribute to expanding our dataset, refining our tools, and shaping the future of civic data access.
+                    Developers, data scientists, and civic tech advocates can contribute directly to our supported projects. Your skills help maintainers expand coverage, refine tools, and sustain the infrastructure that powers civic data access.
                   </p>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export function GetInvolved() {
             <div className="mt-20 pt-20 border-t border-border">
               <h3 className="text-3xl font-bold mb-6">Become a State Data Maintainer</h3>
               <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-                We're recruiting volunteers to maintain and improve civic data for every state. Help us crowdsource and verify representative data from your state with training, demo videos, and community support.
+                We're recruiting volunteers to help maintain civic data infrastructure in every state. Become part of a community of contributors who help sustain and improve the civic data that communities depend on.
               </p>
 
               <div className="mb-12 text-left max-w-3xl mx-auto">
@@ -140,7 +140,7 @@ export function GetInvolved() {
                       Update Jurisdictions Data
                     </h5>
                     <p className="text-muted-foreground ml-10">
-                      Maintain jurisdiction information like website URLs. You won't do this alone—we crowdsource reviews, especially for initial scrapes.
+                      Help maintain and verify civic data across your state. You won't do this alone—we crowdsource reviews and community contributions to keep data accurate and current.
                     </p>
                   </div>
                 </div>

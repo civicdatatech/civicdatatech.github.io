@@ -32,6 +32,7 @@ export function Navbar() {
     { name: "Mission", section: "mission" },
     { name: "Strategy", href: "/strategy" },
     { name: "Partners", section: "partners" },
+    { name: "Blog", href: "/blog" },
     { name: "Get Involved", href: "/get-involved" },
   ];
 

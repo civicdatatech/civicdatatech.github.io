@@ -9,6 +9,8 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import { GetInvolved } from "@/pages/GetInvolved";
 import { Strategy } from "@/pages/Strategy";
+import { Blog } from "@/pages/Blog";
+import { BlogPostDetail } from "@/pages/BlogPost";
 // import { Volunteer } from "@/pages/Volunteer";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
@@ -24,6 +26,8 @@ function AppRouter() {
             <Route path="/" component={Home} />
             <Route path="/get-involved" component={GetInvolved} />
             <Route path="/strategy" component={Strategy} />
+            <Route path="/blog" component={Blog} />
+            <Route path="/blog/:slug" component={BlogPostDetail} />
             {/* <Route path="/volunteer" component={Volunteer} /> */}
             <Route component={NotFound} />
           </Switch>

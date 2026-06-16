@@ -8,13 +8,13 @@ const features = [
 		icon: Database,
 		title: "Supporting Foundational Projects",
 		description:
-			"Backing the core open-source projects that provide the building blocks for civic data pipelines nationwide.",
+			"Funding and sustaining the open-source projects that provide shared infrastructure for civic data across all levels of government including local, state, and federal.",
 	},
 	{
 		icon: Users,
 		title: "Sustaining Maintainers",
 		description:
-			"Providing resources and collaboration to the people and teams who maintain critical civic data projects.",
+			"Providing resources, funding, and collaboration to the people and teams who maintain critical civic data projects.",
 	},
 	{
 		icon: Shield,
@@ -26,7 +26,7 @@ const features = [
 		icon: Search,
 		title: "Expanding Coverage",
 		description:
-			"Focusing support on projects that fill gaps in civic data across jurisdictions and communities.",
+			"Supporting projects that fill critical gaps in civic data infrastructure, especially at the local government level, which remains significantly underserved compared to state and federal data.",
 	},
 ];
 
@@ -39,9 +39,7 @@ export function Mission() {
 						Our Mission & Purpose
 					</h2>
 					<p className="text-lg text-muted-foreground">
-						We support the open-source projects and maintainers that power civic
-						data pipelines, helping ensure civic data stays accessible, verifiable,
-						and ready for the communities that depend on it.
+						We build shared civic data infrastructure by supporting the open-source projects and maintainers who sustain it. Our goal: ensure civic data stays accessible, verifiable, and ready for every community that needs it.
 					</p>
 				</div>
 
@@ -79,9 +77,7 @@ export function Mission() {
 							Learn About Our Strategy
 						</h3>
 						<p className="text-muted-foreground mb-6 text-lg">
-							We invest in collaborative, open approaches — funding maintainers,
-							improving tooling, and helping projects reach the communities that
-							need these resources most.
+							We invest in collaborative, open approaches: funding and supporting maintainers, improving shared tooling, and ensuring projects can reach the communities that depend on reliable civic data infrastructure.
 						</p>
 						<div className="space-y-4 mb-8">
 							<div className="flex items-start gap-3">

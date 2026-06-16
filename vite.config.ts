@@ -12,6 +12,7 @@ export default defineConfig({
     alias: {
       "@": path.resolve(clientRoot, "src"),
       "@assets": path.resolve(clientRoot, "src/assets"),
+      "@data": path.resolve(clientRoot, "src/data"),
     },
   },
   build: {

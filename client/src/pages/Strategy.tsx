@@ -31,10 +31,10 @@ export function Strategy() {
               <h2 className="text-3xl font-bold font-display mb-6">Supporting Maintainers & Projects</h2>
               <div className="prose prose-lg text-muted-foreground">
                 <p className="mb-6">
-                  Our strategy centers on sustaining the maintainers and projects that power civic data pipelines. We recognize that reliable civic data infrastructure depends on consistent support for the teams and tools behind it.
+                  Our strategy centers on sustaining the maintainers and projects that power civic data infrastructure. We recognize that reliable, open civic data infrastructure depends on consistent support for the teams and tools behind it.
                 </p>
                 <p>
-                  We invest in projects like CivicPatch and OpenStates, ensuring they have the resources needed to serve communities effectively. Our approach combines direct funding, collaborative partnerships, and community governance to create a sustainable ecosystem for civic data.
+                  We invest in foundational projects like CivicPatch and OpenStates, ensuring they have the resources needed to serve communities effectively.  Our approach combines direct funding, collaborative partnerships, and community governance to create a sustainable ecosystem for civic data.
                 </p>
               </div>
             </div>
@@ -78,7 +78,7 @@ export function Strategy() {
                    <span className="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-primary ring-4 ring-background" />
                    <h4 className="text-xl font-bold mb-2 text-primary">Immediate Support</h4>
                    <p className="text-muted-foreground">
-                     We are actively supporting CivicPatch and OpenStates, two critical projects that fill significant gaps in civic data nationwide. Our direct funding and partnerships help these teams maintain and expand their work.
+                     We are actively supporting CivicPatch and OpenStates, critical projects that provide shared infrastructure for civic data access, particularly at the local government level where data infrastructure remains significantly underfunded. Our direct funding and partnerships help these teams maintain and expand their work.
                    </p>
                  </div>
                  <div className="relative pl-8 border-l-2 border-border">
@@ -127,7 +127,7 @@ export function Strategy() {
                 <h2 className="text-3xl font-bold font-display mb-6">Current Status: Supporting Key Projects</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Civic Data Tech is actively engaged in supporting CivicPatch and OpenStates, providing funding and collaborative partnerships to sustain these essential projects.
+                    Civic Data Tech is actively engaged in supporting CivicPatch and OpenStates, providing funding and collaborative partnerships to sustain these essential infrastructure projects.
                   </p>
                   <p>
                     Our governance model emphasizes transparency and community involvement, ensuring that decisions about project support are made collaboratively with partners and stakeholders.

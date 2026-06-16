@@ -5,8 +5,8 @@ export function Problem() {
   const impacts = [
     {
       icon: Users,
-      title: "Voters Can't Find Their Representatives",
-      description: "Without standardized jurisdiction data, citizens struggle to identify all officials who represent them—especially in overlapping districts and special areas."
+      title: "Voters Can't Access Reliable Civic Data",
+      description: "Fragmented data systems mean citizens struggle to find, contact, and understand the officials who represent them across all levels of government."
     },
     {
       icon: Lock,
@@ -15,8 +15,8 @@ export function Problem() {
     },
     {
       icon: Zap,
-      title: "Inequity Is Reinforced",
-      description: "Well-resourced jurisdictions maintain clean databases. Under-resourced ones—often serving communities of color and low-income residents—operate with fragmented, outdated systems."
+      title: "Maintainers Are Unsupported",
+      description: "The civic tech projects maintaining critical data infrastructure lack consistent funding, coordination, and community support. Maintainers burn out. Projects stall. Communities lose access."
     }
   ];
 
@@ -34,7 +34,7 @@ export function Problem() {
             When Civic Data Fragments, Democracy Suffers
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-            When civic data lacks standardized, interoperable systems, voters can't easily find, contact, or hold accountable the officials who represent them.
+            Civic data fragmentation creates cascading problems. Without standardized, interoperable systems, voters can't find officials, maintainers lack resources to sustain projects, and communities lose access to reliable data.
           </p>
         </motion.div>
 

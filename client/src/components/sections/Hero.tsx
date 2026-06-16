@@ -15,7 +15,7 @@ export function Hero() {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium mb-6">
-              Supporting open-source civic data projects
+              Building shared infrastructure for civic tech
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6 text-foreground">
@@ -23,7 +23,7 @@ export function Hero() {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
-              We unite the civic tech community and invest in projects that fill gaps in civic data nationwide, ensuring the data stays open, verifiable, and reaches the communities that need it most.
+              We support the maintainers and projects powering civic data infrastructure. By sustaining these teams and tools, we ensure communities have access to reliable, open, and verifiable civic data at every level of government.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
