@@ -26,12 +26,12 @@ export function Navbar() {
   }, []);
 
   const navLinks: (
-    | { name: string; section: "mission" | "strategy" | "partners" }
+    | { name: string; section: "mission" | "strategy" | "team" }
     | { name: string; href: string }
   )[] = [
     { name: "Mission", section: "mission" },
     { name: "Strategy", href: "/strategy" },
-    { name: "Partners", section: "partners" },
+    { name: "Team", section: "team" },
     { name: "Blog", href: "/blog" },
     { name: "Get Involved", href: "/get-involved" },
   ];
@@ -45,7 +45,7 @@ export function Navbar() {
   const isOnHome = () => window.location.pathname === "/";
 
   const handleSectionClick =
-    (section: "mission" | "strategy" | "partners") =>
+    (section: "mission" | "strategy" | "team") =>
     (e: React.MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault();
 
