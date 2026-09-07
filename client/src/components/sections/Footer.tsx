@@ -80,7 +80,7 @@ export function Footer() {
                   href="/"
                   className="hover:text-background transition-colors cursor-pointer"
                 >
-                  Partners
+                  Team
                 </Link>
               </li>
               <li>

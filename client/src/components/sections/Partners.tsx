@@ -29,12 +29,12 @@ const board_members = [
   
 ];
 
-export function Partners() {
+export function Team() {
   return (
-    <section id="partners" className="py-24">
+    <section id="team" className="py-24">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Our Partners & Board Members</h2>
+          <h2 className="text-3xl font-bold mb-4">Our Team & Partners</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Civic Data Tech focuses on supporting the open-source projects and maintainers that make civic data usable and trustworthy. Our primary project support today is focused on CivicPatch and OpenStates.
           </p>

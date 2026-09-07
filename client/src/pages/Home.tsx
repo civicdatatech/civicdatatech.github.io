@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { Hero } from "@/components/sections/Hero";
 import { Problem } from "@/components/sections/Problem";
 import { Mission } from "@/components/sections/Mission";
-import { Partners } from "@/components/sections/Partners";
+import { Team } from "@/components/sections/Partners";
 
 export default function Home() {
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function Home() {
       <Hero />
       <Problem />
       <Mission />
-      <Partners />
+      <Team />
     </>
   );
 }
