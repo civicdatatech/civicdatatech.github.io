@@ -7,6 +7,10 @@ import { Partners } from "@/components/sections/Partners";
 
 export default function Home() {
   useEffect(() => {
+    document.title = "Civic Data Tech | Enhancing Access to Civic Information";
+  }, []);
+
+  useEffect(() => {
     const { search } = window.location;
     if (!search) return;
 

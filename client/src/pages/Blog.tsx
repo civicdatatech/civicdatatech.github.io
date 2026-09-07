@@ -8,6 +8,7 @@ export function Blog() {
   const [posts, setPosts] = useState<BlogPostPage[]>([]);
 
   useEffect(() => {
+    document.title = "Blog | Civic Data Tech";
     window.scrollTo({ top: 0, behavior: 'instant' });
     const allPosts = getAllPosts();
     setPosts(allPosts);

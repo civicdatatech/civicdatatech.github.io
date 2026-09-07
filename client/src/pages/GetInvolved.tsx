@@ -6,6 +6,7 @@ import { useEffect } from "react";
 export function GetInvolved() {
   
   useEffect(() => {
+    document.title = "Get Involved | Civic Data Tech";
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 

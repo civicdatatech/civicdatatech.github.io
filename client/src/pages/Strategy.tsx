@@ -7,6 +7,7 @@ import { useEffect } from "react";
 export function Strategy() {
 
   useEffect(() => {
+    document.title = "Our Strategy | Civic Data Tech";
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
   

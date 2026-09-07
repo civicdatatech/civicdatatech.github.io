@@ -15,6 +15,7 @@ export function BlogPostDetail() {
       return;
     }
 
+    document.title = "Blog | Civic Data Tech";
     window.scrollTo({ top: 0, behavior: 'instant' });
     
     if (params?.slug) {
@@ -22,6 +23,7 @@ export function BlogPostDetail() {
       if (foundPost) {
         setPost(foundPost);
         setNotFound(false);
+        document.title = `${foundPost.title} | Civic Data Tech`;
       } else {
         setNotFound(true);
       }
