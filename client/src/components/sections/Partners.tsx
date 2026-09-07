@@ -22,13 +22,11 @@ const supportingOrganizations = [
   { name: "VoteLight", url: "https://votelight.com/" }
 ];
 
-const contributors = [
-  { name: "Creyton Loud", url: null },
-  { name: "Matthew Copple", url: "https://www.linkedin.com/in/matthewcopple/" },
+const board_members = [
   { name: "Virginia Dooley", url: "https://www.linkedin.com/in/virginia-dooley/" },
-  { name: "YourFriendFido", url: "https://www.yourfriendfido.com/" },
-  { name: "Stump.vote", url: "https://stump.vote/" },
-  { name: "Mappingsupport", url: "https://mappingsupport.com/" }
+  { name: "Creyton Loud", url: "https://www.linkedin.com/in/creyton-loud-ba0abb1ab/" },
+  { name: "Kas Stohr", url: "https://www.linkedin.com/in/kstohr/" },
+  
 ];
 
 export function Partners() {
@@ -36,7 +34,7 @@ export function Partners() {
     <section id="partners" className="py-24">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Our Partners & Contributors</h2>
+          <h2 className="text-3xl font-bold mb-4">Our Partners & Board Members</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Civic Data Tech focuses on supporting the open-source projects and maintainers that make civic data usable and trustworthy. Our primary project support today is focused on CivicPatch and OpenStates.
           </p>
@@ -92,9 +90,9 @@ export function Partners() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground text-center mb-8">Key Contributors</h3>
+          <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground text-center mb-8">Board Members</h3>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
-            {contributors.map((person, i) => (
+            {board_members.map((person, i) => (
               person.url ? (
                 <a
                   key={i}
