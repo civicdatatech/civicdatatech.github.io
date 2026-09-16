@@ -37,6 +37,9 @@ export function GetInvolved() {
                   Join Civic Data Group on Unified <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
+              <p className="text-sm text-muted-foreground mt-4 max-w-xl mx-auto">
+                Unified is a social network where activists gather to collaborate and organize in practical, meaningful ways.
+              </p>
             </div>
             {/* Decorative background */}
             <div className="absolute top-0 right-0 -z-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
