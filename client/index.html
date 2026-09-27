@@ -33,9 +33,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stripe Buy Button Script -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <stripe-buy-button
+      buy-button-id="buy_btn_1UJtQhBx8G2EW3LT1svl5GHG"
+      publishable-key="pk_live_51TUPHqBx8G2EW3LT4hs7FEeJmxul328UouY65pmmjCc75LyPMD2K37S7KdYYFUsNxdHpfKXOZVikWv3deHHk1O6n00dpdZsYep"
+    ></stripe-buy-button>
   </body>
 </html>
