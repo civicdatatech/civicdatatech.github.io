@@ -106,18 +106,12 @@ export function Navbar() {
             <a href="mailto:info@civicdata.tech">Contact Us</a>
           </Button>
           {/* Stripe Buy Button - Desktop */}
-          <div className="ml-2" dangerouslySetInnerHTML={{
-            __html: `<style>
-              stripe-buy-button {
-                --button-bg: hsl(var(--primary));
-                --button-text-color: hsl(var(--primary-foreground));
-              }
-            </style>
+          <div className="ml-2">
             <stripe-buy-button
               buy-button-id="buy_btn_1UJtQhBx8G2EW3LT1svl5GHG"
               publishable-key="pk_live_51TUPHqBx8G2EW3LT4hs7FEeJmxul328UouY65pmmjCc75LyPMD2K37S7KdYYFUsNxdHpfKXOZVikWv3deHHk1O6n00dpdZsYep"
-            ></stripe-buy-button>`
-          }}></div>
+            ></stripe-buy-button>
+          </div>
         </div>
 
         {/* Mobile Toggle */}
@@ -161,18 +155,12 @@ export function Navbar() {
               <a href="mailto:info@civicdata.tech">Contact Us</a>
             </Button>
             {/* Stripe Buy Button - Mobile */}
-            <div className="mt-4" dangerouslySetInnerHTML={{
-              __html: `<style>
-                stripe-buy-button {
-                  --button-bg: hsl(var(--primary));
-                  --button-text-color: hsl(var(--primary-foreground));
-                }
-              </style>
+            <div className="mt-4">
               <stripe-buy-button
                 buy-button-id="buy_btn_1UJtQhBx8G2EW3LT1svl5GHG"
                 publishable-key="pk_live_51TUPHqBx8G2EW3LT4hs7FEeJmxul328UouY65pmmjCc75LyPMD2K37S7KdYYFUsNxdHpfKXOZVikWv3deHHk1O6n00dpdZsYep"
-              ></stripe-buy-button>`
-            }}></div>
+              ></stripe-buy-button>
+            </div>
           </div>
         </div>
       )}
