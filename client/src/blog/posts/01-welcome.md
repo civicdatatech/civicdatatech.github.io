@@ -34,4 +34,4 @@ While state and federal civic data infrastructure is comparatively well-covered,
 
 ## What's Next
 
-We're in the build phase for both community and product. We hold weekly check in calls and bi monthly hackathons. Come join us [Unified](https://unified.me/organization/27721/posts?invite=civicdata) to learn more. 
+We're in the build phase for both community and product. We hold weekly check in calls and bi monthly hackathons. Come join us [Unified](https://unified.me/organization/27721/posts?invite=civicdata) to learn more. Unified is a social network where activists gather to collaborate and organize in practical, meaningful ways. 
