@@ -63,7 +63,7 @@ export function Donate() {
                 <h3 className="font-semibold text-lg">Donations</h3>
                 
                 <Button className="w-full" size="lg" asChild>
-                  <a href="https://donate.stripe.com/aEU5ll9yx3M1gzidQQ" target="_blank" rel="noopener noreferrer">
+                  <a href="https://buymeacoffee.com/civicdatatech" target="_blank" rel="noopener noreferrer">
                     Donate via Stripe
                   </a>
                 </Button>
