@@ -15,13 +15,11 @@ declare module "*.svg" {
   export default src;
 }
 
-declare module "react" {
-  namespace JSX {
-    interface IntrinsicElements {
-      "stripe-buy-button": {
-        "buy-button-id": string;
-        "publishable-key": string;
-      };
-    }
+declare namespace JSX {
+  interface IntrinsicElements {
+    "stripe-buy-button": {
+      "buy-button-id": string;
+      "publishable-key": string;
+    };
   }
 }

@@ -34,6 +34,7 @@ export function Navbar() {
     { name: "Team", section: "team" },
     { name: "Blog", href: "/blog" },
     { name: "Get Involved", href: "/get-involved" },
+    { name: "Support Us", href: "/donate" },
   ];
 
   const scrollToId = (id: string) => {
@@ -105,13 +106,6 @@ export function Navbar() {
           <Button variant="outline" asChild>
             <a href="mailto:info@civicdata.tech">Contact Us</a>
           </Button>
-          {/* Stripe Buy Button - Desktop */}
-          <div className="ml-2 flex items-center justify-center" style={{ maxWidth: '120px' }}>
-            <stripe-buy-button
-              buy-button-id="buy_btn_1UJtQhBx8G2EW3LT1svl5GHG"
-              publishable-key="pk_live_51TUPHqBx8G2EW3LT4hs7FEeJmxul328UouY65pmmjCc75LyPMD2K37S7KdYYFUsNxdHpfKXOZVikWv3deHHk1O6n00dpdZsYep"
-            ></stripe-buy-button>
-          </div>
         </div>
 
         {/* Mobile Toggle */}
@@ -154,13 +148,6 @@ export function Navbar() {
             <Button variant="outline" className="w-full mt-4" asChild>
               <a href="mailto:info@civicdata.tech">Contact Us</a>
             </Button>
-            {/* Stripe Buy Button - Mobile */}
-            <div className="mt-4">
-              <stripe-buy-button
-                buy-button-id="buy_btn_1UJtQhBx8G2EW3LT1svl5GHG"
-                publishable-key="pk_live_51TUPHqBx8G2EW3LT4hs7FEeJmxul328UouY65pmmjCc75LyPMD2K37S7KdYYFUsNxdHpfKXOZVikWv3deHHk1O6n00dpdZsYep"
-              ></stripe-buy-button>
-            </div>
           </div>
         </div>
       )}

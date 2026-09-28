@@ -80,10 +80,3 @@
       sans-serif;
   }
 }
-
-/* Stripe Buy Button Styling */
-/* Stripe Buy Button - Keep default styling */
-stripe-buy-button {
-  --button-bg: hsl(var(--primary));
-  --button-text-color: hsl(var(--primary-foreground));
-}
