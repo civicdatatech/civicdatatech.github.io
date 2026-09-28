@@ -60,17 +60,11 @@ export function Donate() {
 
               {/* Donation Methods */}
               <div className="space-y-4">
-                <h3 className="font-semibold text-lg">Donation Options</h3>
+                <h3 className="font-semibold text-lg">Donations</h3>
                 
                 <Button className="w-full" size="lg" asChild>
-                  <a href="https://stripe.com/donate" target="_blank" rel="noopener noreferrer">
+                  <a href="https://donate.stripe.com/aEU5ll9yx3M1gzidQQ" target="_blank" rel="noopener noreferrer">
                     Donate via Stripe
-                  </a>
-                </Button>
-
-                <Button variant="outline" className="w-full" size="lg" asChild>
-                  <a href="mailto:info@civicdata.tech?subject=Donation%20Inquiry">
-                    Other Donation Methods
                   </a>
                 </Button>
               </div>
