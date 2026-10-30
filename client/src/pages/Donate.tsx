@@ -60,11 +60,31 @@ export function Donate() {
 
               {/* Donation Methods */}
               <div className="space-y-4">
-                <h3 className="font-semibold text-lg">Donations</h3>
+                <h3 className="font-semibold text-lg">Donation Options</h3>
                 
-                <Button className="w-full" size="lg" asChild>
-                  <a href="https://buymeacoffee.com/civicdatatech" target="_blank" rel="noopener noreferrer">
-                    Donate via Stripe
+                <div className="space-y-3">
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-2">One-Time Donation</p>
+                    <Button className="w-full" size="lg" asChild>
+                      <a href="https://buy.stripe.com/cNi5kCboP9Qt7Cz3nO9Ve01" target="_blank" rel="noopener noreferrer">
+                        Donate Once
+                      </a>
+                    </Button>
+                  </div>
+                  
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-2">Monthly Recurring Donation</p>
+                    <Button className="w-full" size="lg" asChild>
+                      <a href="https://donate.stripe.com/cNibJ050raUx3mj5vW9Ve02" target="_blank" rel="noopener noreferrer">
+                        Donate Monthly
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+
+                <Button variant="outline" className="w-full" size="lg" asChild>
+                  <a href="mailto:info@civicdata.tech?subject=Alternative%20Donation%20Method">
+                    Other Donation Methods
                   </a>
                 </Button>
               </div>
