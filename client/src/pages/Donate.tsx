@@ -104,7 +104,7 @@ export function Donate() {
 
         {/* Other Ways to Support */}
         <div className="bg-card border border-border rounded-lg p-8 space-y-6">
-          <h2 className="text-2xl font-display font-bold">Other Ways to Support</h2>
+          <h2 className="text-2xl font-display font-bold">Get in touch if you'd like to maximize your gift and avoid online fees by making a gift by bank transfer.</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="space-y-2">
               <h3 className="font-semibold text-lg">Contribute Code</h3>
