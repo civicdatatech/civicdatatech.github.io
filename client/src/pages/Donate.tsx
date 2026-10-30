@@ -84,7 +84,7 @@ export function Donate() {
 
                 <Button variant="outline" className="w-full" size="lg" asChild>
                   <a href="mailto:info@civicdata.tech?subject=Alternative%20Donation%20Method">
-                    Other Donation Methods
+                    Get in touch to make a donation by bank transfer or discuss partnership opportunities
                   </a>
                 </Button>
               </div>
