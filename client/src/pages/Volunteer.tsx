@@ -37,7 +37,7 @@ export function Volunteer() {
           </div>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-primary hover:bg-primary/90" asChild>
-              <a href="https://www.unified.me/chat/!ZFLepMRGDJzcjoNMuE">Join the Sprint</a>
+              <a href="https://unified.me/chat/!ZGucVJGampzVdyDSVf">Join the Sprint</a>
             </Button>
             <Button variant="outline" asChild>
               <a href="#remote-volunteers" className="cursor-pointer">
@@ -178,7 +178,7 @@ export function Volunteer() {
               <span>
                 <strong>Join our community:</strong>{" "}
                 <a
-                  href="https://unified.me/organization/27721/posts?invite=civicdata"
+                  href="https://unified.me/chat/!ZGucVJGampzVdyDSVf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary font-medium hover:underline"
@@ -292,7 +292,7 @@ export function Volunteer() {
           </p>
           <Button className="bg-primary hover:bg-primary/90" asChild>
             <a
-              href="https://unified.me/chat/!HQloUuiqtsUEjVYPqZ"
+              href="https://unified.me/chat/!ZGucVJGampzVdyDSVf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary font-medium hover:underline"

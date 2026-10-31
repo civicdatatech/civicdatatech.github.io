@@ -33,7 +33,7 @@ export function GetInvolved() {
                 Connect with builders, maintainers, contributors, and civic tech advocates. Participate in discussions and stay updated on our progress.
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90 h-12 px-8 text-base" asChild>
-                <a href="https://unified.me/organization/27721/posts?invite=civicdata" target="_blank" rel="noopener noreferrer">
+                <a href="https://unified.me/chat/!ZGucVJGampzVdyDSVf" target="_blank" rel="noopener noreferrer">
                   Join Civic Data Group on Unified <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>

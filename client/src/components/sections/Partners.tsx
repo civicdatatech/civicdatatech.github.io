@@ -17,7 +17,7 @@ const supportedProjects = [
 
 const supportingOrganizations = [
   { name: "Plural Policy", url: "https://pluralpolicy.com/" },
-  { name: "Unified", url: "https://unified.me/" },
+  { name: "Unified", url: "https://unified.me/chat/!ZGucVJGampzVdyDSVf" },
   { name: "Populist", url: "https://populist.us/" },
   { name: "VoteLight", url: "https://votelight.com/" }
 ];
