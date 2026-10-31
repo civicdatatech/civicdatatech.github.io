@@ -94,6 +94,20 @@ export function Footer() {
             </ul>
           </div>
 
+          <div>
+            <h4 className="font-bold mb-4">Legal</h4>
+            <ul className="space-y-2 text-muted-foreground">
+              <li>
+                <Link
+                  href="/privacy"
+                  className="hover:text-background transition-colors cursor-pointer"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* ...optional Legal column... */}
         </div>
 
