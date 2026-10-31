@@ -12,6 +12,7 @@ import { Strategy } from "@/pages/Strategy";
 import { Blog } from "@/pages/Blog";
 import { BlogPostDetail } from "@/pages/BlogPost";
 import { Donate } from "@/pages/Donate";
+import { PrivacyPolicy } from "@/pages/PrivacyPolicy";
 // import { Volunteer } from "@/pages/Volunteer";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
@@ -30,6 +31,7 @@ function AppRouter() {
             <Route path="/blog" component={Blog} />
             <Route path="/blog/:slug" component={BlogPostDetail} />
             <Route path="/donate" component={Donate} />
+            <Route path="/privacy" component={PrivacyPolicy} />
             {/* <Route path="/volunteer" component={Volunteer} /> */}
             <Route component={NotFound} />
           </Switch>
