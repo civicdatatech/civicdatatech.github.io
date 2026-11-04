@@ -35,63 +35,82 @@ export function Donate() {
 
         {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-12 mb-12">
-          {/* Why Support Section */}
-          <div className="space-y-6">
-            <h2 className="text-2xl font-display font-bold">Why Support Civic Data Tech?</h2>
-            <div className="space-y-4">
-              <div className="border-l-4 border-primary pl-4">
-                <h3 className="font-semibold text-lg mb-2">Supporting Maintainers</h3>
-                <p className="text-muted-foreground">
-                  Open-source civic data projects are built and maintained by dedicated volunteers. Your support helps sustain their critical work.
-                </p>
+          {/* Left Column - Why Support & More Ways */}
+          <div className="space-y-12">
+            {/* Why Support Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl font-display font-bold">Why Support Civic Data Tech?</h2>
+              <div className="space-y-4">
+                <div className="border-l-4 border-primary pl-4">
+                  <h3 className="font-semibold text-lg mb-2">Supporting Maintainers</h3>
+                  <p className="text-muted-foreground">
+                    Open-source civic data projects are built and maintained by dedicated volunteers. Your support helps sustain their critical work.
+                  </p>
+                </div>
+                <div className="border-l-4 border-primary pl-4">
+                  <h3 className="font-semibold text-lg mb-2">Shared Infrastructure</h3>
+                  <p className="text-muted-foreground">
+                    We build standardized, accessible civic data resources that benefit organizations across the country.
+                  </p>
+                </div>
+                <div className="border-l-4 border-primary pl-4">
+                  <h3 className="font-semibold text-lg mb-2">Strengthening Democracy</h3>
+                  <p className="text-muted-foreground">
+                    Reliable civic data is essential for voter engagement, government accountability, and informed civic participation.
+                  </p>
+                </div>
               </div>
-              <div className="border-l-4 border-primary pl-4">
-                <h3 className="font-semibold text-lg mb-2">Shared Infrastructure</h3>
-                <p className="text-muted-foreground">
-                  We build standardized, accessible civic data resources that benefit organizations across the country.
-                </p>
+            </div>
+
+            {/* More Ways to Support Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl font-display font-bold">More Ways to Get Involved</h2>
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  <h3 className="font-semibold text-lg">Contribute Code</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Help maintain and improve our open-source projects on GitHub. All are welcome to contribute.
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="font-semibold text-lg">Amplify Our Message</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Share our work with your network and help spread awareness about civic data challenges.
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="font-semibold text-lg">Join Our Community</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Connect with us on Unified and participate in our discussions and events.
+                  </p>
+                </div>
               </div>
-              <div className="border-l-4 border-primary pl-4">
-                <h3 className="font-semibold text-lg mb-2">Strengthening Democracy</h3>
-                <p className="text-muted-foreground">
-                  Reliable civic data is essential for voter engagement, government accountability, and informed civic participation.
-                </p>
-              </div>
+              <Button variant="outline" asChild>
+                <a href="/get-involved">Learn More About Getting Involved</a>
+              </Button>
             </div>
           </div>
 
-          {/* Donation Info Section */}
+          {/* Right Column - Donation */}
           <div className="space-y-6">
-            <div className="bg-card border border-border rounded-lg p-8 space-y-6">
-              <h2 className="text-2xl font-display font-bold">Make a Donation</h2>
-              
-              {/* 501c3 Status */}
-              <div className="bg-accent/10 border border-accent/30 rounded-lg p-4">
-                <p className="text-sm text-foreground">
-                  <strong>501(c)(3) Status:</strong> Civic Data Tech is currently applying for 501(c)(3) nonprofit status. Once approved (estimated November 2026), donations will be tax-deductible. We'll update this page when the status is official.
-                </p>
+            <div className="bg-card border border-border rounded-lg space-y-6 overflow-hidden">
+              <div className="px-8 pt-8 text-center">
+                <h2 className="text-2xl font-display font-bold">Make a Donation</h2>
               </div>
 
               {/* Donation Methods */}
-              <div className="space-y-4">
-                <h3 className="font-semibold text-lg">Donation Options</h3>
+              <div className="space-y-4 px-2 pb-8">
                 
                 {/* Donorbox Widget */}
-                <div className="donation-form-container">
+                <div className="w-full">
                   <script type="module" src="https://donorbox.org/widgets.js" async></script>
                   {/* @ts-ignore */}
                   <dbox-widget campaign="recurring-donations-977788" type="donation_form" enable-auto-scroll="true"></dbox-widget>
                 </div>
-
-                <Button variant="outline" className="w-full" size="lg" asChild>
-                  <a href="mailto:info@civicdata.tech?subject=Alternative%20Donation%20Method">
-                    Get in touch to make a donation by bank transfer or discuss partnership opportunities
-                  </a>
-                </Button>
               </div>
 
               {/* Additional Info */}
-              <div className="text-sm text-muted-foreground space-y-2 border-t border-border pt-4">
+              <div className="text-sm text-muted-foreground space-y-2 border-t border-border pt-4 px-8 pb-8">
                 <p>
                   If you have questions about donations or would like to discuss partnership opportunities, please contact us at{" "}
                   <a href="mailto:info@civicdata.tech" className="text-primary hover:underline">
@@ -101,34 +120,6 @@ export function Donate() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Other Ways to Support */}
-        <div className="bg-card border border-border rounded-lg p-8 space-y-6">
-          <h2 className="text-2xl font-display font-bold">Get in touch if you'd like to maximize your gift and avoid online fees by making a gift by bank transfer.</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="space-y-2">
-              <h3 className="font-semibold text-lg">Contribute Code</h3>
-              <p className="text-muted-foreground text-sm">
-                Help maintain and improve our open-source projects on GitHub. All are welcome to contribute.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <h3 className="font-semibold text-lg">Amplify Our Message</h3>
-              <p className="text-muted-foreground text-sm">
-                Share our work with your network and help spread awareness about civic data challenges.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <h3 className="font-semibold text-lg">Join Our Community</h3>
-              <p className="text-muted-foreground text-sm">
-                Connect with us on Unified and participate in our discussions and events.
-              </p>
-            </div>
-          </div>
-          <Button variant="outline" asChild>
-            <a href="/get-involved">Learn More About Getting Involved</a>
-          </Button>
         </div>
       </div>
     </div>
