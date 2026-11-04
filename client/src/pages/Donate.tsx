@@ -77,14 +77,14 @@ export function Donate() {
                 <h3 className="font-semibold text-lg">Donation Options</h3>
                 
                 {/* Donorbox Widget */}
-                <div className="w-full overflow-hidden">
+                <div className="donation-form-container">
                   <script type="module" src="https://donorbox.org/widgets.js" async></script>
                   {/* @ts-ignore */}
                   <dbox-widget campaign="recurring-donations-977788" type="donation_form" enable-auto-scroll="true"></dbox-widget>
                 </div>
 
-                <Button variant="outline" className="w-full h-auto py-3 px-4" asChild>
-                  <a href="mailto:info@civicdata.tech?subject=Alternative%20Donation%20Method" className="text-center">
+                <Button variant="outline" className="w-full" size="lg" asChild>
+                  <a href="mailto:info@civicdata.tech?subject=Alternative%20Donation%20Method">
                     Get in touch to make a donation by bank transfer or discuss partnership opportunities
                   </a>
                 </Button>
