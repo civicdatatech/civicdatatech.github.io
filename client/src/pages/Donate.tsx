@@ -64,13 +64,6 @@ export function Donate() {
           <div className="space-y-6">
             <div className="bg-card border border-border rounded-lg p-8 space-y-6">
               <h2 className="text-2xl font-display font-bold">Make a Donation</h2>
-              
-              {/* 501c3 Status */}
-              <div className="bg-accent/10 border border-accent/30 rounded-lg p-4">
-                <p className="text-sm text-foreground">
-                  <strong>501(c)(3) Status:</strong> Civic Data Tech is currently applying for 501(c)(3) nonprofit status. Once approved (estimated November 2026), donations will be tax-deductible. We'll update this page when the status is official.
-                </p>
-              </div>
 
               {/* Donation Methods */}
               <div className="space-y-4">
