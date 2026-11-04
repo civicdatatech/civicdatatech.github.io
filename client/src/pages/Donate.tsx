@@ -1,9 +1,23 @@
 import { useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'dbox-widget': any;
+    }
+  }
+}
+
 export function Donate() {
   useEffect(() => {
     document.title = "Support Us | Civic Data Tech";
+    // Load Donorbox widget script
+    const script = document.createElement('script');
+    script.src = 'https://donorbox.org/widgets.js';
+    script.type = 'module';
+    script.async = true;
+    document.body.appendChild(script);
   }, []);
 
   return (
@@ -62,24 +76,11 @@ export function Donate() {
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg">Donation Options</h3>
                 
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-sm text-muted-foreground mb-2">One-Time Donation</p>
-                    <Button className="w-full" size="lg" asChild>
-                      <a href="https://buy.stripe.com/cNi5kCboP9Qt7Cz3nO9Ve01" target="_blank" rel="noopener noreferrer">
-                        Donate Once
-                      </a>
-                    </Button>
-                  </div>
-                  
-                  <div>
-                    <p className="text-sm text-muted-foreground mb-2">Monthly Recurring Donation</p>
-                    <Button className="w-full" size="lg" asChild>
-                      <a href="https://donate.stripe.com/cNibJ050raUx3mj5vW9Ve02" target="_blank" rel="noopener noreferrer">
-                        Donate Monthly
-                      </a>
-                    </Button>
-                  </div>
+                {/* Donorbox Widget */}
+                <div className="donation-form-container">
+                  <script type="module" src="https://donorbox.org/widgets.js" async></script>
+                  {/* @ts-ignore */}
+                  <dbox-widget campaign="recurring-donations-977788" type="donation_form" enable-auto-scroll="true"></dbox-widget>
                 </div>
 
                 <Button variant="outline" className="w-full" size="lg" asChild>
