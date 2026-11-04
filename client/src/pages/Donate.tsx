@@ -62,29 +62,31 @@ export function Donate() {
 
           {/* Donation Info Section */}
           <div className="space-y-6">
-            <div className="bg-card border border-border rounded-lg p-8 space-y-6">
-              <h2 className="text-2xl font-display font-bold">Make a Donation</h2>
+            <div className="bg-card border border-border rounded-lg space-y-6 overflow-hidden">
+              <div className="px-8 pt-8">
+                <h2 className="text-2xl font-display font-bold">Make a Donation</h2>
+              </div>
 
               {/* Donation Methods */}
-              <div className="space-y-4">
+              <div className="space-y-4 px-2 pb-8">
                 <h3 className="font-semibold text-lg">Donation Options</h3>
                 
                 {/* Donorbox Widget */}
-                <div className="donation-form-container">
+                <div className="w-full">
                   <script type="module" src="https://donorbox.org/widgets.js" async></script>
                   {/* @ts-ignore */}
                   <dbox-widget campaign="recurring-donations-977788" type="donation_form" enable-auto-scroll="true"></dbox-widget>
                 </div>
 
-                <Button variant="outline" className="w-full" size="lg" asChild>
+                
                   <a href="mailto:info@civicdata.tech?subject=Alternative%20Donation%20Method">
                     Get in touch to make a donation by bank transfer or discuss partnership opportunities
                   </a>
-                </Button>
+                
               </div>
 
               {/* Additional Info */}
-              <div className="text-sm text-muted-foreground space-y-2 border-t border-border pt-4">
+              <div className="text-sm text-muted-foreground space-y-2 border-t border-border pt-4 px-8 pb-8">
                 <p>
                   If you have questions about donations or would like to discuss partnership opportunities, please contact us at{" "}
                   <a href="mailto:info@civicdata.tech" className="text-primary hover:underline">
