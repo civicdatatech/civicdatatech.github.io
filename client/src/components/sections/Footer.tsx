@@ -16,6 +16,16 @@ export function Footer() {
             <p className="text-muted-foreground max-w-sm mb-6">
               Fostering a more accessible, resilient, and participatory democracy for all through open data and collaboration.
             </p>
+            <div className="text-sm text-muted-foreground mb-6 space-y-2">
+              <div>
+                <p className="font-semibold text-background">Address</p>
+                <p>5010 Braddock Dr<br />Colorado Springs, CO 80920</p>
+              </div>
+              <div>
+                <p className="font-semibold text-background">EIN</p>
+                <p>42-4930944</p>
+              </div>
+            </div>
             <div className="flex gap-4">
               <a
                 href="https://www.linkedin.com/company/civic-data-tech/"
