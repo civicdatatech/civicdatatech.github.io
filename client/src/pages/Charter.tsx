@@ -11,7 +11,7 @@ export function Charter() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-accent/10 to-background">
-        <div className="container mx-auto px-6 max-w-4xl">
+        <div className="container mx-auto px-6 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export function Charter() {
 
       {/* Why This Matters */}
       <section className="py-20 md:py-32 bg-muted/40">
-        <div className="container mx-auto px-6 max-w-4xl">
+        <div className="container mx-auto px-6 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -80,7 +80,7 @@ export function Charter() {
 
       {/* Charter Principles */}
       <section className="py-20 md:py-32 bg-background">
-        <div className="container mx-auto px-6 max-w-4xl">
+        <div className="container mx-auto px-6 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -133,7 +133,7 @@ export function Charter() {
 
       {/* How It Works */}
       <section className="py-20 md:py-32 bg-muted/40">
-        <div className="container mx-auto px-6 max-w-4xl">
+        <div className="container mx-auto px-6 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -193,7 +193,7 @@ export function Charter() {
 
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background to-accent/10">
-        <div className="container mx-auto px-6 max-w-4xl">
+        <div className="container mx-auto px-6 max-w-5xl">
           {showForm ? (
             <motion.div
               initial={{ opacity: 0, y: 20 }}

@@ -12,7 +12,7 @@ export function GetInvolved() {
 
   return (
     <div className="min-h-screen bg-background pt-32 pb-20">
-      <div className="container mx-auto px-6 max-w-4xl">
+      <div className="container mx-auto px-6 max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

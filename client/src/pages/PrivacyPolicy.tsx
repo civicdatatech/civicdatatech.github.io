@@ -7,7 +7,7 @@ export function PrivacyPolicy() {
 
   return (
     <div className="min-h-screen bg-background pt-32 pb-20">
-      <div className="container mx-auto px-6 max-w-3xl">
+      <div className="container mx-auto px-6 max-w-5xl">
         {/* Header */}
         <div className="mb-16">
           <h1 className="text-5xl font-display font-bold mb-4">
