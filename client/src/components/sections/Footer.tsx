@@ -51,7 +51,7 @@ export function Footer() {
               </a>
               {/* New Unified icon */}
               <a
-                href="https://unified.me/organization/27721/posts?invite=civicdata"
+                href="https://unified.me/organization/27721/posts?invite=CivicData"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
